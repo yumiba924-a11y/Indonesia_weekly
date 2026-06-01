@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indonesia Weekly 2026/5/25–5/29｜JCI −0.56% — Capital Quest Corporation, Ltd. 投資調査部</title>
+<meta name="description" content="インドネシア株式市場 週次レポート 第1号（2026/5/25–5/29）。JCI −0.56%／6,127.38。Capital Quest Corporation, Ltd. 投資調査部。">
+<style>
+:root{
+  --green:#00492C; --green-deep:#002D1A; --gold:#F5C400; --red:#DA251D;
+  --cream:#FAF8F2; --white:#fff; --ink:#1A1A1A; --mid:#4A4A4A; --light:#888;
+  --border:rgba(0,73,44,0.14);
+  --pos:#00A86B; --neg:#DA251D;
+  --mincho:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","ＭＳ 明朝",serif;
+  --sans-en:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+  --gothic:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium",YuGothic,"Yu Gothic","Meiryo UI",Meiryo,"Noto Sans JP",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--mincho);background:var(--cream);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+.en{font-family:var(--sans-en)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+
+/* ===== HERO ===== */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--green-deep)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease;animation:kb 18s ease-in-out infinite}
+.hero-bg .slide.on{opacity:1}
+@keyframes kb{0%{transform:scale(1.0)}100%{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,45,26,0.82),rgba(0,45,26,0.62) 45%,rgba(0,45,26,0.9))}
+.hero-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:46px 32px 52px}
+.brand-row{display:flex;align-items:center;gap:18px;margin-bottom:54px}
+.brand-row img{height:52px;width:auto;display:block}
+.brand-text{font-family:var(--sans-en);font-size:13px;letter-spacing:0.12em;color:rgba(255,255,255,0.72);border-left:1px solid rgba(255,255,255,0.25);padding-left:18px;line-height:1.5}
+.eyebrow{font-family:var(--sans-en);font-size:13px;letter-spacing:0.32em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.eyebrow::before{content:"";width:46px;height:1px;background:var(--gold)}
+.hero-title{font-family:var(--sans-en);font-weight:900;letter-spacing:-0.02em;line-height:1;font-size:104px;white-space:nowrap}
+.hero-title .red{color:#FF5A4D}
+.hero-sub{font-size:18px;color:rgba(255,255,255,0.78);margin-top:16px;font-family:var(--gothic)}
+.kpis{display:flex;gap:0;margin-top:46px;flex-wrap:wrap}
+.kpi{padding:0 56px;border-left:1px solid rgba(255,255,255,0.18)}
+.kpi:first-child{padding-left:0;border-left:none}
+.kpi-label{font-family:var(--sans-en);font-size:14px;letter-spacing:0.14em;color:rgba(255,255,255,0.66);text-transform:uppercase;white-space:nowrap}
+.kpi-val{font-family:var(--sans-en);font-size:62px;font-weight:800;line-height:1.05;margin-top:8px;white-space:nowrap}
+.kpi-sub{font-family:var(--gothic);font-size:15px;color:rgba(255,255,255,0.7);margin-top:4px;white-space:nowrap}
+.kpi-val.neg{color:#FF8A7E}.kpi-val.pos{color:#7BE0B0}
+
+/* ===== SECTION FRAME ===== */
+section{padding:60px 0}
+section.alt{background:var(--white)}
+.sec-label{font-family:var(--sans-en);font-size:13px;letter-spacing:0.24em;color:var(--green);text-transform:uppercase;margin:0 0 8px}
+.sec-h{font-size:30px;font-weight:700;color:var(--green);line-height:1.35;margin-bottom:6px}
+.sec-rule{width:54px;height:3px;background:var(--gold);margin:14px 0 30px}
+p.lead{font-size:17px;color:var(--ink);line-height:2;text-align:justify}
+.muted{color:var(--mid)}
+
+/* Overview stats */
+.stats3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.stat{background:var(--cream);border:1px solid var(--border);border-top:3px solid var(--green);border-radius:3px;padding:20px 22px}
+section.alt .stat{background:var(--cream)}
+.stat .t{font-family:var(--sans-en);font-size:12px;letter-spacing:0.12em;color:var(--light);text-transform:uppercase}
+.stat .v{font-family:var(--sans-en);font-size:30px;font-weight:800;color:var(--green);margin-top:6px;line-height:1.1}
+.stat .d{font-family:var(--gothic);font-size:13.5px;color:var(--mid);margin-top:8px;line-height:1.6}
+
+/* daily path bars */
+.daybars{display:flex;align-items:flex-end;gap:14px;height:130px;margin-top:34px;padding:0 6px;border-bottom:1px solid var(--border)}
+.daycol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bar{width:54%;border-radius:3px 3px 0 0}
+.bar.pos{background:var(--pos)}.bar.neg{background:var(--neg)}.bar.flat{background:#C9C9C9}
+.dayval{font-family:var(--sans-en);font-size:13px;font-weight:700;margin-bottom:6px}
+.dayval.pos{color:var(--pos)}.dayval.neg{color:var(--neg)}.dayval.flat{color:var(--light)}
+.daylbl{font-family:var(--gothic);font-size:12.5px;color:var(--mid);margin-top:8px;text-align:center;line-height:1.4}
+
+/* Sector grid */
+.secgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;margin-top:6px}
+.secrow{display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--border)}
+.secname{font-family:var(--gothic);font-size:15px;color:var(--ink);width:200px;flex-shrink:0}
+.secname small{color:var(--light);font-family:var(--sans-en);font-size:12px;margin-left:6px}
+.secbarwrap{flex:1;height:9px;background:rgba(0,0,0,0.05);border-radius:5px;position:relative;overflow:hidden}
+.secbar{position:absolute;top:0;bottom:0;border-radius:5px}
+.secbar.pos{background:var(--pos);left:50%}.secbar.neg{background:var(--neg);right:50%}
+.secmid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:rgba(0,0,0,0.18)}
+.secval{font-family:var(--sans-en);font-size:14.5px;font-weight:700;width:74px;text-align:right;flex-shrink:0}
+.secval.pos{color:var(--pos)}.secval.neg{color:var(--neg)}
+
+/* Movers */
+.movers{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:6px}
+.mcard{background:var(--cream);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+section.alt .mcard{background:#fff}
+.mhead{font-family:var(--sans-en);font-size:13px;letter-spacing:0.12em;padding:12px 20px;color:#fff;text-transform:uppercase;font-weight:700}
+.mhead.up{background:var(--pos)}.mhead.dn{background:var(--neg)}
+.mitem{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--border)}
+.mitem:last-child{border-bottom:none}
+.mtick{font-family:var(--sans-en);font-weight:800;font-size:15px;color:var(--green);width:64px;flex-shrink:0}
+.mname{font-family:var(--gothic);font-size:13px;color:var(--mid);flex:1;line-height:1.4}
+.mname b{display:block;color:var(--ink);font-size:13.5px;font-weight:600}
+.mret{font-family:var(--sans-en);font-weight:800;font-size:16px;white-space:nowrap}
+.mret.pos{color:var(--pos)}.mret.neg{color:var(--neg)}
+.anote{grid-column:1/-1;background:var(--green-deep);color:rgba(255,255,255,0.9);border-radius:4px;padding:26px 30px;margin-top:4px}
+.anote .tag{font-family:var(--sans-en);font-size:12px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:10px}
+.anote p{font-size:15.5px;line-height:1.95;text-align:justify}
+.anote .basis{font-family:var(--gothic);font-size:12px;color:rgba(255,255,255,0.5);margin-top:16px;line-height:1.6}
+
+/* Spotlight */
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:6px}
+.spot{background:#fff;border:1px solid var(--border);border-radius:4px;padding:26px 28px}
+section.alt .spot{background:var(--cream)}
+.spot .stick{font-family:var(--sans-en);font-size:13px;letter-spacing:0.12em;color:var(--light)}
+.spot .sname{font-size:21px;font-weight:700;color:var(--green);margin:4px 0 2px;line-height:1.4}
+.spot .ssec{font-family:var(--gothic);font-size:13px;color:var(--mid)}
+.spot .sret{font-family:var(--sans-en);font-size:38px;font-weight:800;margin:14px 0 4px}
+.spot .sret.pos{color:var(--pos)}.spot .sret.neg{color:var(--neg)}
+.spot .why{font-family:var(--sans-en);font-size:11px;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
+.spot .swhy{font-family:var(--gothic);font-size:14px;color:var(--ink);line-height:1.85;margin-top:8px;text-align:justify}
+
+/* News lanes */
+.news{display:flex;flex-direction:column;gap:18px;max-width:1000px;margin:6px auto 0}
+.ncard{background:#fff;border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:3px;padding:22px 26px}
+section.alt .ncard{background:var(--cream)}
+.ntag{font-family:var(--sans-en);font-size:11.5px;letter-spacing:0.14em;color:var(--green);background:rgba(0,73,44,0.07);padding:4px 11px;border-radius:14px;text-transform:uppercase;display:inline-block;margin-bottom:12px}
+.nh{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.ncard p{font-size:14.5px;color:var(--mid);line-height:1.9;text-align:justify}
+.nsrc{font-family:var(--gothic);font-size:11.5px;color:var(--light);margin-top:10px}
+
+/* Risk */
+.risk{background:var(--green-deep);color:#fff;border-radius:5px;padding:34px 36px;margin-top:6px}
+.risk .rstate{font-size:17px;line-height:1.95;color:rgba(255,255,255,0.9);text-align:justify;font-family:var(--mincho)}
+.rstats{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;width:100%;margin-top:26px}
+.ritem{text-align:center}
+.ritem .rv{font-family:var(--sans-en);font-size:30px;font-weight:800;color:var(--gold)}
+.ritem .rl{font-family:var(--gothic);font-size:13px;color:rgba(255,255,255,0.7);margin-top:6px;line-height:1.5}
+
+/* Memo */
+.memo{display:grid;grid-template-columns:1.55fr 1fr;gap:34px;margin-top:6px;align-items:start}
+.memo-body{background:#fff;border:1px solid var(--border);border-radius:4px;padding:30px 34px}
+section.alt .memo-body{background:var(--cream)}
+.memo-title{font-family:var(--mincho);font-size:25px;font-weight:700;color:var(--green);line-height:1.5;margin-bottom:16px;white-space:nowrap}
+.memo-body p{font-size:15.5px;line-height:2.05;text-align:justify}
+.memo-side{display:flex;flex-direction:column;gap:12px}
+.fcard{background:var(--green);color:#fff;border-radius:4px;padding:16px 20px}
+.fcard .fl{font-family:var(--gothic);font-size:12.5px;color:rgba(255,255,255,0.72)}
+.fcard .fv{font-family:var(--sans-en);font-size:24px;font-weight:800;margin-top:4px}
+.fcard .fv.pos{color:#7BE0B0}.fcard .fv.neg{color:#FF8A7E}
+
+/* basis / footer */
+.basisnote{font-family:var(--gothic);font-size:12px;color:var(--light);line-height:1.85;border-top:1px solid var(--border);padding-top:20px;margin-top:6px;text-align:justify}
+.foot{background:var(--green-deep);color:rgba(255,255,255,0.55);font-size:12.5px;line-height:1.9;padding:38px 0}
+.foot a{color:var(--gold);text-decoration:none}
+.foot-top{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.foot-top img{height:40px}
+.foot-disc{font-size:11.5px;color:rgba(255,255,255,0.34);max-width:900px;margin-top:8px}
+
+@media(max-width:860px){
+  .hero-title{font-size:54px;white-space:normal}
+  .kpi{padding:0 22px}.kpi-val{font-size:42px}
+  .stats3,.secgrid,.movers,.spots,.memo{grid-template-columns:1fr}
+  .kpi:nth-child(2){border-left:none;padding-left:0}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-bg" id="heroBg">
+    <div class="slide on" style="background-image:url('./id_photos/photo01.jpg')"></div>
+    <div class="slide" style="background-image:url('./id_photos/photo02.jpg')"></div>
+    <div class="slide" style="background-image:url('./id_photos/photo03.jpg')"></div>
+  </div>
+  <div class="hero-inner">
+    <a class="brand-row" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" style="text-decoration:none">
+      <img src="./assets/cqc_logo_white.png" alt="Capital Quest Corporation, Ltd.">
+      <span class="brand-text">Capital Quest Corporation, Ltd.<br>投資調査部</span>
+    </a>
+    <div class="eyebrow">Weekly Intelligence Report ／ 第1号 ・ 2026.5.25–5.29</div>
+    <h1 class="hero-title">Indonesia <span class="red">Weekly</span></h1>
+    <div class="hero-sub">インドネシア株式市場 週次レポート ― 指数は下げ、時価総額は増えた一週間</div>
+
+    <div class="kpis">
+      <div class="kpi">
+        <div class="kpi-label">JCI (IHSG) 終値</div>
+        <div class="kpi-val neg">6,127.38</div>
+        <div class="kpi-sub">週次 −0.56%（前金曜→当金曜）</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">日次平均 売買代金</div>
+        <div class="kpi-val">Rp28.38<span style="font-size:30px">兆</span></div>
+        <div class="kpi-sub">前週比 +30.4%（約¥2,542億）</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">外国人 週間ネット</div>
+        <div class="kpi-val neg">−Rp12.43<span style="font-size:30px">兆</span></div>
+        <div class="kpi-sub">売り越し（約¥1,113億）</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== OVERVIEW ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">Weekly Market Overview</div>
+    <div class="sec-h">先週の相場概況</div>
+    <div class="sec-rule"></div>
+    <p class="lead">
+      先週のジャカルタ総合指数（JCI／IHSG）は <b>6,127.38</b> で取引を終え、前金曜比 <b>−0.56%</b> と小幅に下落した。イドゥル・アドハ（犠牲祭）に伴い <b>5月27日（水）が国民の祝日、28日（木）が合同休暇</b>となったため、実質の取引は<b>月・火・金の3営業日</b>にとどまった。週初の月曜は +0.30% と堅調だったものの、火曜に −1.23% と崩れ、休場明けの金曜は −0.05% でほぼ横ばい。指数を押し下げたのは時価総額の大きい大型銀行（BBCA −3.4%、BBRI −3.3%）と自動車のアストラ（ASII −7.4%）で、外国人の売り越しが重荷となった。
+    </p>
+    <p class="lead" style="margin-top:18px">
+      一方で、見出しの指数とは裏腹に<b>市場全体の時価総額は +0.88% 増のRp10,729兆（約¥96兆）</b>へ拡大した。これは Prajogo Pangestu 氏が支配する <b>Barito 系（BREN +34.7%、BRPT +20.9%）</b> など、発行済み株式の大半をオーナーが保有し市場に出回る株（浮動株）が極端に薄い大型株が急騰したため。浮動株で重みづけする指数にはあまり効かない一方、発行済み全株で測る時価総額だけが膨らむ――"どの物差しで測るか"で市場の評価が割れた一週間といえる。
+    </p>
+
+    <div class="stats3">
+      <div class="stat">
+        <div class="t">Trading Days</div>
+        <div class="v">3日</div>
+        <div class="d">実質3営業日（月・火・金）。5/27 水＝イドゥル・アドハ、5/28 木＝合同休暇で休場。</div>
+      </div>
+      <div class="stat">
+        <div class="t">Market Cap (BEI)</div>
+        <div class="v" style="color:var(--pos)">+0.88%</div>
+        <div class="d">市場時価総額はRp10,729兆へ拡大（前週Rp10,635兆）。指数下落と逆行。</div>
+      </div>
+      <div class="stat">
+        <div class="t">Rupiah / USD</div>
+        <div class="v">17,824</div>
+        <div class="d">USD/IDR（5/29）。ルピアは月間約−3%・年初来−6.6%でアジア最弱級。外資流出と表裏。</div>
+      </div>
+    </div>
+
+    <div class="daybars" aria-label="日次リターン">
+      <div class="daycol"><div class="dayval pos">+0.30%</div><div class="bar pos" style="height:26%"></div><div class="daylbl">月 5/25<br>6,206.35</div></div>
+      <div class="daycol"><div class="dayval neg">−1.23%</div><div class="bar neg" style="height:90%"></div><div class="daylbl">火 5/26<br>6,130.19</div></div>
+      <div class="daycol"><div class="dayval flat">休場</div><div class="bar flat" style="height:6%"></div><div class="daylbl">水 5/27<br>祝日</div></div>
+      <div class="daycol"><div class="dayval flat">休場</div><div class="bar flat" style="height:6%"></div><div class="daylbl">木 5/28<br>合同休暇</div></div>
+      <div class="daycol"><div class="dayval neg">−0.05%</div><div class="bar neg" style="height:10%"></div><div class="daylbl">金 5/29<br>6,127.38</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTORS ===================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-label">Sector Performance</div>
+    <div class="sec-h">セクター別 週次リターン（時価総額加重・GICS 11セクター）</div>
+    <div class="sec-rule"></div>
+    <div class="secgrid">
+      <div class="secrow"><div class="secname">公益事業 <small>n=11</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar pos" style="width:46%"></div></div><div class="secval pos">+25.0%</div></div>
+      <div class="secrow"><div class="secname">コミュニケーション <small>n=46</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar pos" style="width:14%"></div></div><div class="secval pos">+4.13%</div></div>
+      <div class="secrow"><div class="secname">素材 <small>n=87</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar pos" style="width:12%"></div></div><div class="secval pos">+3.49%</div></div>
+      <div class="secrow"><div class="secname">一般消費財・サービス <small>n=106</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar pos" style="width:7%"></div></div><div class="secval pos">+1.77%</div></div>
+      <div class="secrow"><div class="secname">情報技術 <small>n=28</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar pos" style="width:4%"></div></div><div class="secval pos">+0.84%</div></div>
+      <div class="secrow"><div class="secname">生活必需品 <small>n=107</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:4%"></div></div><div class="secval neg">−0.84%</div></div>
+      <div class="secrow"><div class="secname">金融 <small>n=102</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:6%"></div></div><div class="secval neg">−1.20%</div></div>
+      <div class="secrow"><div class="secname">エネルギー <small>n=55</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:6%"></div></div><div class="secval neg">−1.27%</div></div>
+      <div class="secrow"><div class="secname">ヘルスケア <small>n=34</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:7%"></div></div><div class="secval neg">−1.44%</div></div>
+      <div class="secrow"><div class="secname">資本財・サービス <small>n=148</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:11%"></div></div><div class="secval neg">−2.63%</div></div>
+      <div class="secrow"><div class="secname">不動産 <small>n=76</small></div><div class="secbarwrap"><div class="secmid"></div><div class="secbar neg" style="width:11%"></div></div><div class="secval neg">−2.69%</div></div>
+    </div>
+    <p class="basisnote" style="border-top:none;padding-top:18px">
+      ※ 構成銘柄シートから時価総額加重で直接算出（前金曜終値→当金曜終値、配当込トータルリターン）。<b>これは発行済み全株式ベースのフルmcap加重</b>で、浮動株調整を行う公表指数（JCI −0.56%）とは性質が異なる。とくに<b>公益事業 +25.0% は BREN（Barito Renewables）1銘柄、素材 +3.49% は BRPT/AMMN の急騰に強く依存</b>しており、浮動株の薄い少数銘柄の振れがそのまま現れている点に留意。TRがNULLの小型株（91/913）は加重計算から除外。
+    </p>
+  </div>
+</section>
+
+<!-- ===================== TOP MOVERS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">Top Movers ／ 週次リターン（前金曜→当金曜・配当込）</div>
+    <div class="sec-h">資源・Barito 系が急騰、銀行・自動車・素材大型株が下落</div>
+    <div class="sec-rule"></div>
+    <div class="movers">
+      <div class="mcard">
+        <div class="mhead up">▲ Top Gainers</div>
+        <div class="mitem"><div class="mtick">BREN</div><div class="mname"><b>Barito Renewables Energy</b>公益事業 ／ 再生可能エネルギー</div><div class="mret pos">+34.69%</div></div>
+        <div class="mitem"><div class="mtick">PTRO</div><div class="mname"><b>Petrosea</b>エネルギー ／ 鉱山サービス</div><div class="mret pos">+24.53%</div></div>
+        <div class="mitem"><div class="mtick">CUAN</div><div class="mname"><b>Petrindo Jaya Kreasi</b>エネルギー ／ 石炭</div><div class="mret pos">+22.33%</div></div>
+        <div class="mitem"><div class="mtick">RATU</div><div class="mname"><b>Raharja Energi Cepu</b>エネルギー ／ 石油・ガス</div><div class="mret pos">+21.00%</div></div>
+        <div class="mitem"><div class="mtick">BRPT</div><div class="mname"><b>Barito Pacific</b>素材 ／ 石化・エネルギー持株</div><div class="mret pos">+20.87%</div></div>
+      </div>
+      <div class="mcard">
+        <div class="mhead dn">▼ Top Losers（大型・指数寄与）</div>
+        <div class="mitem"><div class="mtick">AMRT</div><div class="mname"><b>Sumber Alfaria (Alfamart)</b>生活必需品 ／ 小売</div><div class="mret neg">−19.30%</div></div>
+        <div class="mitem"><div class="mtick">INCO</div><div class="mname"><b>Vale Indonesia</b>素材 ／ ニッケル</div><div class="mret neg">−14.77%</div></div>
+        <div class="mitem"><div class="mtick">TPIA</div><div class="mname"><b>Chandra Asri Pacific</b>素材 ／ 石油化学</div><div class="mret neg">−10.46%</div></div>
+        <div class="mitem"><div class="mtick">ASII</div><div class="mname"><b>Astra International</b>資本財 ／ 自動車・複合</div><div class="mret neg">−7.41%</div></div>
+        <div class="mitem"><div class="mtick">BBCA</div><div class="mname"><b>Bank Central Asia</b>金融 ／ 銀行（指数最大ウェイト）</div><div class="mret neg">−3.39%</div></div>
+      </div>
+      <div class="anote">
+        <span class="tag">Analyst Note</span>
+        <p>
+          上位は <b>Prajogo Pangestu 関連／資源・エネルギー</b>に集中した。再生可能エネルギーの BREN、石化・エネルギー持株の BRPT、石炭の CUAN、鉱山サービスの PTRO と、オーナー支配色が強く浮動株の薄い銘柄群が揃って二桁高となっている。もっとも同じ Prajogo 系でも石油化学の <b>TPIA は −10.5%</b> と逆行し、外国人の売り越し最多銘柄（TPIA・BBCA・AMMN）に名を連ねた。複合体全体が一律に買われたわけではない点は注意したい。下落側は外国人売りを浴びた大型バリュー（銀行 BBCA／BBRI、複合のアストラ ASII）とニッケルの INCO、小売 AMRT が中心で、<b>指数の方向（−0.56%）は実質的にこの大型株群が決めた</b>。
+        </p>
+        <p class="basis">※ リターンは LSEG TR.TotalReturn1Wk（前金曜終値→当金曜終値、配当込）。掲載は流動性（出来高&gt;0）・時価総額の大きい銘柄を中心に抽出。Top Losers は値下がり率の絶対値だけでなく、指数寄与の大きい大型株を優先して掲載。AMRT の急落は配当権利落ち等の特殊要因の可能性があり継続確認中。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPOTLIGHT ===================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-label">Stock Spotlight ／ 注目銘柄</div>
+    <div class="sec-h">今週の主役と、指数を支えきれなかった重し</div>
+    <div class="sec-rule"></div>
+    <div class="spots">
+      <div class="spot">
+        <div class="stick">BREN.JK</div>
+        <div class="sname">Barito Renewables Energy</div>
+        <div class="ssec">公益事業 ／ 地熱・再生可能エネルギー（Prajogo Pangestu 系）</div>
+        <div class="sret pos">+34.69%</div>
+        <div class="why">Why now?</div>
+        <div class="swhy">時価総額Rp443兆に達する大型株ながら、発行済み株式の大半をオーナー側が保有し、市場に出回る浮動株が極端に少ない。だからこそ薄商いでも値が飛びやすく、今週の上昇が<b>市場全体の時価総額（+0.88%）を押し上げた最大の要因</b>となった。半面、浮動株で重みづけする指数への寄与は限定的に設計されており、"指数は冴えないのに時価総額は増える"乖離の主役。値動きが大きいぶん、週後半の持続性と反落には留意したい。</div>
+      </div>
+      <div class="spot">
+        <div class="stick">ASII.JK</div>
+        <div class="sname">Astra International</div>
+        <div class="ssec">資本財・サービス ／ 自動車・金融・重機の複合企業</div>
+        <div class="sret neg">−7.41%</div>
+        <div class="swhy" style="border:none;padding:0;margin-top:14px"></div>
+        <div class="why">Why now?</div>
+        <div class="swhy">インドネシアを代表する複合企業で指数の主要構成銘柄。BBCA とともに<b>今週の指数の主たる重し</b>と報じられた。自動車需要の伸び悩み観測に加え、ルピア安と外国人売りが大型バリューに集中したことが背景。浮動株が厚く指数寄与が大きいぶん、BREN とは逆に<b>下げがそのまま指数に効いた</b>。資源高の裏で、内需・自動車セクターの体温が下がっている点を映す一銘柄。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">News &amp; Topics ／ 今週の新事実（3レーン）</div>
+    <div class="sec-h">政策・通貨／外資フロー／個別・セクター</div>
+    <div class="sec-rule"></div>
+    <div class="news">
+      <div class="ncard">
+        <span class="ntag">① 金融政策・通貨 ／ Policy &amp; FX</span>
+        <div class="nh">ルピア安が継続、アジア最弱級。BI 政策金利は 5.25%（前週 +50bp）</div>
+        <p>対ドルのルピアは 5/29 に <b>USD/IDR 17,824</b> 近辺と軟調。月間で約 −3%、年初来では約 −6.6% と、インドルピー・フィリピンペソと並ぶアジア最弱クラスの下落。中央銀行（Bank Indonesia）は前週 5/20 に政策金利を +50bp 引き上げ <b>5.25%</b> としており、通貨防衛と景気・資金流出のあいだで難しい舵取りが続く。通貨安は外国人投資家のインドネシア資産離れと表裏の関係にある。</p>
+        <div class="nsrc">出所：Trading Economics（IDR）／ exchange-rates.org（USD/IDR, JPY/IDR）</div>
+      </div>
+      <div class="ncard">
+        <span class="ntag">② マクロ・外資 ／ Foreign Flow</span>
+        <div class="nh">外国人、週間ネット売り Rp12.43兆（約¥1,113億）。最多売却は TPIA・BBCA・AMMN</div>
+        <p>先週の外国人投資家は全市場ベースで <b>約Rp12.43兆の売り越し</b>。最も売られたのは石油化学の TPIA、最大手銀行の BBCA、銅・金鉱山の AMMN だった。年初来の累積流出は大型バリュー、とりわけ銀行株に集中しており、指数が時価総額の半分近くを銀行で占める構造（推計）とあいまって、外資の動きが指数の方向を左右しやすい。日次平均の売買代金は <b>Rp28.38兆（前週比 +30.4%、約¥2,542億）</b>と、3営業日ながら活況だった。</p>
+        <div class="nsrc">出所：Kontan、Kompas、Katadata（2026/5/30–31）</div>
+      </div>
+      <div class="ncard">
+        <span class="ntag">③ 個別・セクター ／ Sector</span>
+        <div class="nh">Barito／Prajogo 複合体が急騰 ― 指数は下落も時価総額は +0.88% 増</div>
+        <p>再生可能エネルギーの BREN（+34.7%）を筆頭に、BRPT（+20.9%）、CUAN（+22.3%）など Prajogo Pangestu 関連の資源・エネルギー銘柄が軒並み二桁高。これらは浮動株が薄く指数（浮動株調整）への寄与は限られる一方、発行済み全株で測る市場時価総額を押し上げ、<b>IHSG が −0.56% 下げたにもかかわらず BEI の時価総額は +0.88% 増の Rp10,729兆（約¥96兆）</b>へ拡大した。「指数が下げた＝市場全体が縮んだ」とは限らない、という構図が鮮明に出た週。</p>
+        <div class="nsrc">出所：Katadata／suara.com、IDNFinancials（2026/5/31）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RISK ===================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-label">Risk Monitor</div>
+    <div class="sec-h">留意したいリスク</div>
+    <div class="sec-rule"></div>
+    <div class="risk">
+      <div class="rstate">
+        ルピア安と外国人の資金流出が続くなか、指数は時価総額の大きい大型銀行に方向を強く依存しやすい。一方で足元の上昇は浮動株の薄い少数の大型株に偏っており、時価総額の見かけと実際に売買できる市場の体温との差が広がりやすい。"指数"と"時価総額"のどちらで語るかで評価が割れる局面では、数字の物差しを揃えて読むことが重要といえる。
+      </div>
+      <div class="rstats">
+        <div class="ritem"><div class="rv">17,824</div><div class="rl">USD/IDR（5/29）<br>月間 約 −3%、外資流出と表裏</div></div>
+        <div class="ritem"><div class="rv">−Rp12.43兆</div><div class="rl">外国人 週間ネット売り<br>大型バリュー（銀行）に集中</div></div>
+        <div class="ritem"><div class="rv">薄い浮動株</div><div class="rl">Barito 系の急騰は時価総額を<br>大きく動かすが値振れも大</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MEMO ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">Hitokuchi Memo ／ ひとくちメモ</div>
+    <div class="sec-h">解釈の視点</div>
+    <div class="sec-rule"></div>
+    <div class="memo">
+      <div class="memo-body">
+        <div class="memo-title">「指数は下げ、時価総額は増えた一週間」</div>
+        <p>今週のインドネシアは、見出しの指数（IHSG −0.56%）と「市場全体の時価総額（+0.88%）」が逆を向いた珍しい週だった。からくりは <b>"浮動株"</b> にある。指数は実際に市場で売買できる株（浮動株）で重みづけするため、外国人に売られた大型銀行の比重が大きく、その下げが効く。</p>
+        <p style="margin-top:14px">一方、時価総額は発行済みの全株でカウントする。だから Prajogo 氏が大半を握り市場に出回る株が少ない Barito 系（BREN など）が急騰すると、指数にはあまり効かないのに時価総額だけが膨らむ。<b>"市場が上がった／下がった"は、どの物差しで見るかで答えが変わる</b>――そんな教科書のような一週間だった。次に「インドネシア株が上がった」という見出しを見たら、それが指数の話か、時価総額の話かを一度立ち止まって確かめたい。</p>
+      </div>
+      <div class="memo-side">
+        <div class="fcard"><div class="fl">IHSG 週次</div><div class="fv neg">−0.56%</div></div>
+        <div class="fcard"><div class="fl">BEI 市場時価総額</div><div class="fv pos">+0.88%</div></div>
+        <div class="fcard"><div class="fl">外国人 ネット売り</div><div class="fv">Rp12.43兆</div></div>
+        <div class="fcard"><div class="fl">実質取引日数</div><div class="fv">3日</div></div>
+      </div>
+    </div>
+
+    <p class="basisnote">
+      データ基準：JCI（IHSG）の週次・終値は前金曜（5/22）終値→当金曜（5/29）終値の公表ベース（−0.56%／6,127.38）。日次経路は対象週内（実質3営業日：5/25 月・5/26 火・5/29 金。5/27 水＝イドゥル・アドハ、5/28 木＝合同休暇で休場）。個別銘柄・セクターのリターンは LSEG <span class="en">TR.TotalReturn1Wk</span>（前金曜終値→当金曜終値、配当込）。セクターは構成銘柄から時価総額加重で直接算出（発行済み全株ベース・浮動株調整なし）。TR が NULL の小型株（91/913）は加重計算から除外。公表指数は浮動株調整のため本表のフルmcap加重値とは乖離する。¥換算は 1 JPY≈111.65 IDR（5/25 時点）、USD/IDR=17,824（5/29 時点）。出所：LSEG Workspace、Kontan／Kompas／Katadata、Trading Economics、IDNFinancials、IDX。本資料は情報提供のみを目的とし、特定の金融商品の売買を推奨するものではありません。
+    </p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="./assets/cqc_logo_white.png" alt="Capital Quest Corporation, Ltd.">
+      <span>Capital Quest Corporation, Ltd. ／ 投資調査部</span>
+    </div>
+    <div>
+      <a href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener">公式サイト</a> ・
+      <a href="../">Indonesia Weekly アーカイブ</a>
+    </div>
+    <div class="foot-disc">
+      本資料は Capital Quest Corporation, Ltd.（CQC）投資調査部が情報提供のみを目的として作成したものであり、特定の金融商品の取得・売買・保有等を勧誘・推奨するものではありません。投資に関する最終判断は、利用者ご自身の責任と判断において行ってください。掲載する情報・データ（第三者提供データを含む）は信頼できると判断したものに基づいておりますが、その正確性・完全性・適時性を保証するものではありません。記載した見解・予想・見通しは作成時点のものであり、予告なく変更されることがあります。過去の実績・データは将来の成果を保証するものではありません。本資料の利用に起因して生じたいかなる損害についても、当社は一切の責任を負いません。本資料の全部または一部の無断転用・複製・再配布・改変はご遠慮ください。© 2026 Capital Quest Corporation, Ltd.
+    </div>
+  </div>
+</footer>
+
+<script>
+// hero photo loop (crossfade, 3 slides)
+(function(){
+  var slides = document.querySelectorAll('#heroBg .slide');
+  if(slides.length<2) return;
+  var i=0;
+  setInterval(function(){
+    slides[i].classList.remove('on');
+    i=(i+1)%slides.length;
+    slides[i].classList.add('on');
+  },5000);
+})();
+</script>
+</body>
+</html>
